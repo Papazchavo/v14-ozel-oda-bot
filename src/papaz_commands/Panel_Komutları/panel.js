@@ -19,7 +19,7 @@ let Papaz = new EmbedBuilder()
 .setDescription(`\`${message.guild.name}\` Sunucusunun Özel Oda sistemine hoşgeldinAşağıdaki butonlar yardımıyla yeni bir özel oda oluşturabilirsin.
 Adınıza açılan sohbet kanalından özel ayarlar paneline ulabilirsiniz?`)
 .setAuthor({ name: message.guild.name, iconURL: message.guild.iconURL({ dynamic: true }) })
-.setFooter({ text: `Oda Oluşturma Paneli Size Metin Özel Mesaj Olarak Atıcak Dır!` });
+.setFooter({ text: `Oda Oluşturma Paneli Size Metin Özel Mesaj Olarak Atacaktır!` });
 
 message.channel.send({ embeds: [Papaz] ,components:[papazbutton]})
 message.delete();
