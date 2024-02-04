@@ -4,6 +4,5 @@
   "voiceChannel":"",
   "kategoriID":"",
   "sunucuID":"",
-  "odaOlusturID":"",
-  "odaSure":120000
+  "odaOlusturID":""
 }
