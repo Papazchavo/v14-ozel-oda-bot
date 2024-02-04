@@ -22,15 +22,6 @@ if (!papaz_prop.conf) return;
 client.on(papaz_prop.conf.name, papaz_prop);
 console.log(`[EVENT] ${papaz_prop.conf.name} Yüklendi!`);});});
 const commands2 = client.commands2 = (global.commands2 = []);
-readdir("./komutlar_papaz/", (err, files) => {
-  if (err) throw err;
-  files.forEach((file) => {
-      if (!file.endsWith(".js")) return;
-      let props = require(`./komutlar_papaz/${file}`);
-      client.commands2.push({name: props.name,type: props.type})
-      console.log(`[KOMUT] Menü Komut Yüklendi: ${props.name}`);
-  });
-});
 client.on("ready", async () => {
     const rest = new REST({ version: "9" }).setToken(papaz_config.token);
   try {
